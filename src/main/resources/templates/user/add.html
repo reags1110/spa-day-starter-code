@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.tymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+<form method="post">
+    <label>
+        Username:
+        <input type="text" name="username">
+    </label>
+    <label>
+        Email:
+        <input type="text" name="email">
+    </label>
+    <label>
+        Password:
+        <input type="password" name="password">
+        <p th:text="${error}"></p>
+    </label>
+    <label>
+        Verify Password:
+        <input type="password" name="verifyPassword">
+    </label>
+    <input type="submit" value="Sign Up">
+</form>
+
+</body>
+</html>
